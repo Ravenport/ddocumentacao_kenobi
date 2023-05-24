@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - Bomix</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://unpkg.com/vue-multiselect@2.1.6"></script>
+    <link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.6/dist/vue-multiselect.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row h-100">
+
+            <!-- ---------------------------------------------------------------------- 
+                MENU DE NAVEGAÇÃO
+            ---------------------------------------------------------------------- -->
+            <div class="menu fixed-top shadow">
+                <div class="row">
+                    <div class="col-sm-6 d-flex align-items-center">
+                        <button type="button" class="btn_menu" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-grid-3x3-gap-fill btn_pontos" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col-sm-6 d-flex justify-content-end">
+                        <div class="search">
+                            <a href="" target="_blank" hidden></a>
+                            <input type="text" class="search_bar_outside" placeholder="Pesquisar...">
+                            <div class="icon"><ion-icon name="search-outline"></ion-icon></div>
+                            <div class="list">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <img class="img-fluid" src="img/kenobiColaboradores.svg" id="logo">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Documentação</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <h2 class="titulo_menu_doc mb-4 mt-4">Documentação Kenobi</h2>
+                    <hr class="hr_menu">
+                    <a href="index.html" class="cta"><span>Início</span></a>
+                    <a href="dashboard.html" class="cta"><span>Dashboard</span></a>
+                    <a href="formularios.html" class="cta"><span>Formulários</span></a>
+                    <a href="funcionarios.html" class="cta"><span>Funcionários</span></a>
+                    <a href="relatorioDoAlmoco.html" class="cta"><span>Relatório do almoço</span></a>
+                    <a href="usuarios.html" class="cta"><span>Usuários</span></a>
+                    <a href="menu.html" class="cta"><span>Menu</span></a>
+                    <hr class="hr_menu">
+                    <h2 class="titulo_menu_doc mt-4 mb-4">Documentação CAP</h2>
+                    <hr class="hr_menu">
+                    <a href="recursosRealtime.html" class="cta"><span>Recursos realtime</span></a>
+                    <a href="dadosDosEmpenhos.html" class="cta"><span>Dados dos empenhos</span></a>
+                    <a href="relatorioDosEmpenhos.html" class="cta"><span>Relatório dos empenhos</span></a>
+                    <hr class="hr_menu">
+                </div>
+
+                <!-- <input class="form-control me-2" onclick="docsearch()" type="search" placeholder="Search" aria-label="Search"> -->
+            </div>
+            <!-- ---------------------------------------------------------------------- 
+                MENU DE NAVEGAÇÃO
+            ---------------------------------------------------------------------- -->
+
+            <!-- ---------------------------------------------------------------------- 
+                CONTEÚDO PRINCIPAL
+            ---------------------------------------------------------------------- -->
+            <div class="col-sm-12 bg-light">
+                <h1 class="text-center titulo_pag">Usuários</h1>
+                <p class="text-center">Guia para as funcionalidades da aba usuários</p>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-sm-6 d-flex justify-content-center">
+                        <div class="d-block espaco_subtopico">
+                            <p class="mt-2 mb-2">Sub-tópicos relacionados a usuários</p>
+                            <ul class="mt-2 mb-2">
+                                <li><a href="criacaoDeUsuario.html">Como criar usuários</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <main>
+                    <article id="article1">
+                        <h2 class="text-center">Função</h2>
+                        <div class="row justify-content-center">
+                            <div class="coluna_doc col-sm-6">
+                                <p class="text-center mb-4">A aba de usuários oferece ao utilizador do sistema a
+                                    capacidade de ver, configurar e alterar usuários do sistema,
+                                    essa aba conta com um campo para localizar o colaborador,
+                                    um campo para adicionar um novo usuário e uma tabela com todos os funcionários
+                                    existentes. Segue abaixo uma imagem dessa interface.</p>
+
+                                <h4 class="text-center mt-4">Tabela de usuários</h4>
+                                <div>
+                                    <div>
+                                        <img class="img img-fluid rounded mt-4 mb-4" src="img/tabela_usuarios.PNG"
+                                            alt="Tabela com os dados dos usuários dos sistemas da empresa">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-4 mb-4">Nessa aba podem ser cadastrados novos usuários do
+                                    sistema além de permitir
+                                    busca e edição das configurações de acesso dos colaboradores previamente
+                                    cadastrados.</p>
+                                <h4 class="text-center titulo-sec">Botões de opções e bloqueio de usuários</h4>
+                                <div>
+                                    <img src="img/opcao_bloqueio_usuario.PNG"
+                                        alt="Display do status do usuário com dois botões de configuração ao lado"
+                                        class="img img-fluid rounded mt-4 mb-4">
+                                </div>
+                                <p class="text-center mt-4 mb-4">Tanto o azul como vermelho, os botões
+                                    no canto direito da tabela servem para verificar e alterar
+                                    dados dos usuários, o vermelho serve para o bloqueio dos mesmos e o azul para
+                                    visualização das opções de acesso dos sites da Bomix.
+                                </p>
+                                <h4 class="text-center titulo-sec">Opções de acesso de usuário</h4>
+                                <div>
+                                    <img src="img/opcoes_acesso_usuario.PNG" alt="Configurações de acesso do usuário"
+                                        class="img img-fluid rounded mt-4 mb-4">
+                                </div>
+                                <p class="text-center mt-4 mb-4">Aqui podem ser alteradas as autorizações do usuário em
+                                    relação ao acesso aos sistemas internos da Bomix.</p>
+                                <span class="espaco_final"></span>
+                                <p class="text-center mt-4 mb-4">Ver também <a href="criacaoDeUsuario.html">Criação de
+                                        usuário</a></p>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+            <!-- ---------------------------------------------------------------------- 
+                CONTEÚDO PRINCIPAL
+            ---------------------------------------------------------------------- -->
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/sugestoes.js"></script>
+    <script src="scripts/search_scripts.js"></script>
+</body>
+
+</html>

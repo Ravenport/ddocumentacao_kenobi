@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - Bomix</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://unpkg.com/vue-multiselect@2.1.6"></script>
+    <link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.6/dist/vue-multiselect.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row h-100">
+
+            <!-- ---------------------------------------------------------------------- 
+                MENU DE NAVEGAÇÃO
+            ---------------------------------------------------------------------- -->
+            <div class="menu fixed-top shadow">
+                <div class="row">
+                    <div class="col-sm-6 d-flex align-items-center">
+                        <button type="button" class="btn_menu" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-grid-3x3-gap-fill btn_pontos" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col-sm-6 d-flex justify-content-end">
+                        <div class="search">
+                            <a href="" target="_blank" hidden></a>
+                            <input type="text" class="search_bar_outside" placeholder="Pesquisar...">
+                            <div class="icon"><ion-icon name="search-outline"></ion-icon></div>
+                            <div class="list">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <img class="img-fluid" src="img/kenobiColaboradores.svg" id="logo">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Documentação</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <h2 class="titulo_menu_doc mb-4 mt-4">Documentação Kenobi</h2>
+                    <hr class="hr_menu">
+                    <a href="index.html" class="cta"><span>Início</span></a>
+                    <a href="dashboard.html" class="cta"><span>Dashboard</span></a>
+                    <a href="formularios.html" class="cta"><span>Formulários</span></a>
+                    <a href="funcionarios.html" class="cta"><span>Funcionários</span></a>
+                    <a href="relatorioDoAlmoco.html" class="cta"><span>Relatório do almoço</span></a>
+                    <a href="usuarios.html" class="cta"><span>Usuários</span></a>
+                    <a href="menu.html" class="cta"><span>Menu</span></a>
+                    <hr class="hr_menu">
+                    <h2 class="titulo_menu_doc mt-4 mb-4">Documentação CAP</h2>
+                    <hr class="hr_menu">
+                    <a href="recursosRealtime.html" class="cta"><span>Recursos realtime</span></a>
+                    <a href="dadosDosEmpenhos.html" class="cta"><span>Dados dos empenhos</span></a>
+                    <a href="relatorioDosEmpenhos.html" class="cta"><span>Relatório dos empenhos</span></a>
+                    <hr class="hr_menu">
+                </div>
+
+                <!-- <input class="form-control me-2" onclick="docsearch()" type="search" placeholder="Search" aria-label="Search"> -->
+            </div>
+            <!-- ---------------------------------------------------------------------- 
+                MENU DE NAVEGAÇÃO
+            ---------------------------------------------------------------------- -->
+
+            <!-- ---------------------------------------------------------------------- 
+                CONTEÚDO PRINCIPAL
+            ---------------------------------------------------------------------- -->
+            <div class="col-sm-12 bg-light">
+                <h1 class="text-center titulo_pag">Dashboard</h1>
+                <p class="text-center ">Guia prático de auxílio para a utilização do Dashboard</p>
+
+                <main>
+                    <article id="article1">
+                        <h2 class="text-center titulo_article">Função</h2>
+                        <div class="row justify-content-center">
+                            <div class="coluna_doc col-sm-6">
+                                <p class="text-center mt-4 mb-4">O dashboard é a página inicial aonde você encontra a
+                                    seguinte interface.
+                                </p>
+                                <div>
+                                    <div>
+                                        <img src="img/dashboard_inteface.PNG" alt="Imagem da página inicial do Kenobi"
+                                            class="img img-fluid rounded mb-4 mt-4">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-4 mb-4">No conteúdo do site você encontra alguns atalhos como os botões
+                                    <span class="negrito">"Formulários SMP"</span>, <span class="negrito">"Verificação de eficácia"</span> e <span class="negrito">"Requisições"</span> que vão
+                                    abrir uma aba com diversas opções que facilitam a
+                                    navegação no site.
+                                </p>
+                                <div>
+                                    <div>
+                                        <img src="img/dashboard_atalho_navegacao.PNG" alt="Botões de atalho Kenobi"
+                                            class="img img-fluid rounded mb-4 mt-4">
+                                    </div>
+                                </div>
+                                <h4 class="text-center titulo-sec">Dados do funcionário</h4>
+                                <p class="text-center mt-4 mb-4">O Dashboard do Kenobi também tem alguns campos que
+                                    exibem dados dos funcionários
+                                    como a data de aniversário das pessoas que farão aniversário no mês atual, além
+                                    disso mostra também
+                                    o número da coligada e filial do usuário.
+                                </p>
+                                <div>
+                                    <div>
+                                        <img src="img/dashboard_dados_aniversario.PNG"
+                                            alt="Botão de atalho do formulário de eficácia"
+                                            class="img img-fluid rounded mb-4 mt-4">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-4 mb-4">Além das funções mencionadas acima temos também a
+                                    funcionalidade
+                                    das notificações que por sua vez aparecem de duas formas, a primeira é mais
+                                    destacada e está no centro do
+                                    dashboard sendo exibida da seguinte forma.
+                                </p>
+                                <div>
+                                    <div>
+                                        <!-- Colocar as fotos que Maurício mandou -->
+                                        <img src="img/notificacoes_dashboard.png"
+                                            alt="Botão de atalho do formulário de eficácia"
+                                            class="img img-fluid rounded mb-4 mt-4">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-4 mb-4">A segunda forma de exibição das notificações é mais
+                                    discreta, ela é exibida
+                                    ao clicar no ícone de sino que está localizado na lateral esquerda da sua foto.
+                                </p>
+                                <div>
+                                    <div>
+                                        <!-- Colocar as fotos que Maurício mandou -->
+                                        <img src="img/Simbolo_notificacoes_dashboard.png"
+                                            alt="Botão de atalho do formulário de eficácia"
+                                            class="img img-fluid rounded mb-4 mt-4">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-4 mb-4">Ao ser clicado o botão abrirá a seguinte página.</p>
+                                <div>
+                                    <div>
+                                        <!-- Colocar as fotos que Maurício mandou -->
+                                        <img src="img/notificacoes_sidebar.png"
+                                            alt="Botão de atalho do formulário de eficácia"
+                                            class="img img-fluid rounded mb-4 mt-4">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-4 mb-4">Essas notificações não somente servem para avisar o
+                                    funcionario de tarefas
+                                    pendentes mas também tem como objetivo ajudar na navegação até a tarefa, pois ao ser
+                                    clicada ela irá redirecionar
+                                    o usuário até a tarefa.
+                                </p>
+                            </div>
+                            <span class="espaco_final"></span>
+                        </div>
+                    </article>
+                </main>
+            </div>
+            <!-- ---------------------------------------------------------------------- 
+                CONTEÚDO PRINCIPAL
+            ---------------------------------------------------------------------- -->
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/sugestoes.js"></script>
+    <script src="scripts/search_scripts.js"></script>
+</body>
+
+</html>
